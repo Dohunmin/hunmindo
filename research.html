@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Research Experience | Hunmin Do</title>
+    <meta
+      name="description"
+      content="Research experience and academic work by Hunmin Do."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="detail-page">
+    <main class="detail-shell">
+      <a class="detail-back" href="./index.html" id="back-home-link">Back to home</a>
+
+      <section class="detail-panel detail-section">
+        <p class="section-label">Research Experience</p>
+
+        <article class="experience-item">
+          <h3>Data eXperience Lab (DXLab), Sungkyunkwan University</h3>
+          <p class="experience-role">M.Sc. Student Researcher</p>
+          <p class="experience-meta">Jan 2026 - Present</p>
+        </article>
+
+        <article class="experience-item">
+          <h3>UX Lab, Seoul National University</h3>
+          <p class="experience-org">Graduate School of Convergence Science and Technology</p>
+          <p class="experience-role">Undergraduate Student Researcher</p>
+          <p class="experience-meta">Seoul, South Korea - Jan 2026 - Feb 2026</p>
+          <p class="experience-body">
+            Assisted in AI-driven User Experience research under the supervision of Prof.
+            Joongseek Lee.
+          </p>
+        </article>
+
+        <article class="experience-item">
+          <h3>Smardi Lab, Sungkyunkwan University</h3>
+          <p class="experience-org">School of Mechanical Engineering</p>
+          <p class="experience-role">Undergraduate Student Researcher</p>
+          <p class="experience-meta">Suwon, South Korea - Dec 2024 - Oct 2025</p>
+          <p class="experience-body">
+            Assisted in service design research under the supervision of Prof. Jaeboong Choi,
+            focusing on data-driven digital persona development, user interview coding, and
+            statistical analysis using SPSS.
+          </p>
+          <p class="experience-body">
+            Research domains include Service Design Process, User Experience, and
+            Human-Computer Interaction (HCI).
+          </p>
+        </article>
+
+        <article class="experience-item">
+          <h3>Rise Lab, Sungkyunkwan University</h3>
+          <p class="experience-org">School of Mechanical Engineering</p>
+          <p class="experience-role">Undergraduate Research Program Researcher</p>
+          <p class="experience-meta">Suwon, South Korea - Jun 2024 - Aug 2024</p>
+          <p class="experience-body">
+            Conducted research on obstacle prediction algorithms under the supervision of Prof.
+            Hyungpil Moon.
+          </p>
+          <ul class="experience-list">
+            <li>Utilized Kalman Filter (KF) and Extended Kalman Filter (EKF).</li>
+            <li>Implemented real-time obstacle detection via sensor fusion and probabilistic motion modeling.</li>
+            <li>Used the CARLA autonomous driving simulator with ROS2 on Ubuntu.</li>
+          </ul>
+        </article>
+      </section>
+    </main>
+    <script>
+      (() => {
+        const backLink = document.getElementById("back-home-link");
+        if (!backLink) return;
+
+        backLink.addEventListener("click", (event) => {
+          const hasSavedScroll = sessionStorage.getItem("portfolioScrollTop") !== null;
+          if (!hasSavedScroll) return;
+
+          event.preventDefault();
+          window.location.href = "./index.html";
+        });
+      })();
+    </script>
+  </body>
+</html>

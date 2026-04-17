@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles.css" />
@@ -19,7 +19,7 @@
   <body>
     <div class="page-shell">
       <main>
-        <section class="hero" id="top">
+        <section class="hero fullpage-screen" id="top" data-fullpage-section>
           <div class="hero-media">
             <div class="media-overlay"></div>
             <div class="media-copy">
@@ -36,79 +36,502 @@
 
           <div class="hero-panel">
             <div class="panel-inner">
-              <p class="kicker">Portfolio / 2026</p>
               <h1>HUNMIN DO</h1>
-              <p class="intro">
-                브랜드와 디지털 제품 사이를 연결하는 디자이너입니다. 리서치,
-                인터랙션, 그리고 조용하지만 오래 남는 화면을 만듭니다.
-              </p>
 
               <nav class="social-links" aria-label="Social links">
-                <a href="#" aria-label="Behance">
-                  <span>B</span>
+                <a href="#" aria-label="Copy Gmail address" data-copy-email="gnsals9262@gmail.com">
+                  <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M3.75 6.75h16.5a.75.75 0 0 1 .75.75v9a.75.75 0 0 1-.75.75H3.75A.75.75 0 0 1 3 16.5v-9a.75.75 0 0 1 .75-.75Z"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.7"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="m4.5 7.5 7.016 5.26a.8.8 0 0 0 .968 0L19.5 7.5"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.7"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
                 </a>
-                <a href="#" aria-label="Instagram">
-                  <span>I</span>
+                <a href="https://www.linkedin.com/in/hunmin-do-5b7bb3338" aria-label="LinkedIn" target="_blank" rel="noreferrer">
+                  <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M6.75 8.25a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM5.5 9.75h2.5v8.75H5.5zM10.5 9.75H13v1.25h.04c.35-.66 1.2-1.5 2.71-1.5 2.9 0 3.25 1.82 3.25 4.67v4.33h-2.5v-3.84c0-1.04-.02-2.38-1.45-2.38s-1.67 1.13-1.67 2.3v3.92H10.5Z"
+                      fill="currentColor"
+                    />
+                  </svg>
                 </a>
-                <a href="#" aria-label="LinkedIn">
-                  <span>in</span>
+                <a href="https://scholar.google.com/citations?user=tsN6K5IAAAAJ&hl=ko" aria-label="Google Scholar" target="_blank" rel="noreferrer">
+                  <img class="social-icon social-icon-image" src="./assets/logos/google-scholar--v2.jpg" alt="" />
                 </a>
-                <a href="mailto:hello@example.com" aria-label="Email">
-                  <span>@</span>
+                <a href="mailto:gnsals9262@gmail.com" aria-label="Email">
+                  <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M16.5 18.75c-1.58 0-2.84-.8-3.54-1.86a4.63 4.63 0 0 1-3.71 1.86A4.75 4.75 0 1 1 14 14v1a1.75 1.75 0 0 0 3.5 0V14a5.5 5.5 0 1 0-2.2 4.4"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.7"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <circle cx="9.25" cy="14" r="2.25" fill="none" stroke="currentColor" stroke-width="1.7" />
+                  </svg>
                 </a>
               </nav>
-
-              <div class="mini-facts">
-                <div>
-                  <span class="label">Based in</span>
-                  <strong>Seoul</strong>
-                </div>
-                <div>
-                  <span class="label">Focus</span>
-                  <strong>Brand, Web, UX</strong>
-                </div>
-              </div>
             </div>
           </div>
         </section>
 
-        <section class="content-grid">
+        <section class="content-grid fullpage-screen" data-fullpage-section>
           <article class="text-block">
             <p class="section-label">About</p>
-            <h2>단정한 구조 안에서도 인상이 남는 화면을 좋아합니다.</h2>
-            <p>
-              이 템플릿은 레퍼런스처럼 이미지와 타이포그래피가 균형 있게 맞서는
-              구성을 바탕으로 만들어졌습니다. 본인 사진, 프로젝트 이미지, 소개
-              문구만 교체하면 바로 포트폴리오 첫 페이지로 사용할 수 있습니다.
-            </p>
+            <div class="about-layout">
+              <img class="about-profile-image" src="./assets/Profile/profile.jpg" alt="Portrait of Hunmin Do" />
+              <div class="about-copy">
+                <p class="about-lead">I'm Hunmin Do</p>
+                <p class="about-support">
+                  an Undergraduate student in Mechanical Engineering at Sungkyunkwan University.
+                </p>
+                <div class="about-body">
+                  <p>
+                    I focus on AI-driven interaction systems and data-informed UX research in
+                    Human-Computer Interaction (HCI), User Experience (UX), and Agentic AI systems.
+                  </p>
+                </div>
+              </div>
+            </div>
           </article>
 
           <article class="projects-card">
-            <p class="section-label">Selected work</p>
-            <div class="project-item">
-              <span>01</span>
-              <div>
-                <h3>Museum Archive</h3>
-                <p>Editorial website and exhibition storytelling</p>
-              </div>
-            </div>
-            <div class="project-item">
-              <span>02</span>
-              <div>
-                <h3>Studio Journal</h3>
-                <p>Minimal brand system with immersive article layouts</p>
-              </div>
-            </div>
-            <div class="project-item">
-              <span>03</span>
-              <div>
-                <h3>Form and Gesture</h3>
-                <p>Creative direction for a visual portfolio platform</p>
-              </div>
+            <p class="section-label">Research Interests</p>
+            <div class="interest-grid">
+              <article class="interest-card">
+                <div class="interest-card-meta">
+                  <span>01</span>
+                </div>
+                <h3>Human-Computer/Robot Interaction</h3>
+                <p>People, embodied systems, and adaptive interfaces.</p>
+              </article>
+              <article class="interest-card">
+                <div class="interest-card-meta">
+                  <span>02</span>
+                </div>
+                <h3>User Experience &amp; Service Design</h3>
+                <p>Coherent journeys from observation to iteration.</p>
+              </article>
+              <article class="interest-card">
+                <div class="interest-card-meta">
+                  <span>03</span>
+                </div>
+                <h3>Agentic AI &amp; Multi-persona Systems</h3>
+                <p>Collaborative behaviors and human-facing agency.</p>
+              </article>
+              <article class="interest-card">
+                <div class="interest-card-meta">
+                  <span>04</span>
+                </div>
+                <h3>Digital Health &amp; Wearable UX</h3>
+                <p>Wellbeing, sensing, and data-informed support.</p>
+              </article>
             </div>
           </article>
         </section>
+
+        <section class="research-talk-board fullpage-screen" aria-label="Research and talks" data-fullpage-section>
+          <article class="board-card board-card-copy board-card-research">
+            <h2>Research</h2>
+            <a class="pill-link detail-link" href="./research.html">Learn more</a>
+          </article>
+
+          <div class="board-card board-card-visual" aria-hidden="true">
+            <div class="visual-frame">
+              <div class="slide-window">
+                <div class="slide-header"></div>
+                <div class="slide-grid">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+              <div class="speaker-silhouette"></div>
+            </div>
+          </div>
+
+          <div class="board-card board-card-logos" aria-hidden="true">
+            <div class="research-canvas">
+              <div class="research-canvas-grid"></div>
+              <div class="research-canvas-panel research-canvas-panel-main"></div>
+              <div class="research-canvas-panel research-canvas-panel-side"></div>
+              <div class="research-canvas-chart"></div>
+              <div class="research-canvas-device"></div>
+              <div class="research-canvas-card research-canvas-card-top"></div>
+              <div class="research-canvas-card research-canvas-card-bottom"></div>
+            </div>
+          </div>
+
+          <article class="board-card board-card-copy board-card-talks">
+            <h2>Publication</h2>
+            <a class="pill-link detail-link" href="./publications.html">Learn more</a>
+          </article>
+        </section>
+
+        <section class="impact-grid fullpage-screen" aria-labelledby="impact-title" data-fullpage-section>
+          <div class="impact-intro projects-header">
+            <h2 id="impact-title">Projects</h2>
+            <p class="projects-lead">
+              I value technological advancement, but I focus on projects that help real people
+              adopt and benefit from technology more easily. I have worked on diverse
+              industry-academia projects across AI, UX, Service Design, and Digital Health.
+            </p>
+          </div>
+
+          <div class="project-hub">
+            <div class="project-tiles" role="list" aria-label="Project list">
+              <button class="project-tile" type="button" data-project="travel">
+                <div class="tile-logo" aria-label="SKKAI">
+                  <img class="project-logo-img" src="./assets/logos/SKKAI.png" alt="SKKAI logo" />
+                </div>
+              </button>
+              <button class="project-tile" type="button" data-project="kosme">
+                <div class="tile-logo" aria-label="KOSME">
+                  <img class="project-logo-img" src="./assets/logos/kosme.png" alt="KOSME logo" />
+                </div>
+              </button>
+              <button class="project-tile" type="button" data-project="maeil">
+                <div class="tile-logo" aria-label="Maeil Business Newspaper">
+                  <img class="project-logo-img" src="./assets/logos/maekyung.jpg" alt="Maeil Business Newspaper logo" />
+                </div>
+              </button>
+              <button class="project-tile" type="button" data-project="kto">
+                <div class="tile-logo" aria-label="Korea Tourism Organization">
+                  <img class="project-logo-img" src="./assets/logos/kto.png" alt="Korea Tourism Organization logo" />
+                </div>
+              </button>
+              <button class="project-tile" type="button" data-project="ballie">
+                <div class="tile-logo" aria-label="Samsung">
+                  <img class="project-logo-img" src="./assets/logos/sansung.png" alt="Samsung logo" />
+                </div>
+              </button>
+              <button class="project-tile" type="button" data-project="smc">
+                <div class="tile-logo" aria-label="Samsung Medical Center">
+                  <img class="project-logo-img" src="./assets/logos/SMC.png" alt="Samsung Medical Center logo" />
+                </div>
+              </button>
+              <button class="project-tile" type="button" data-project="skku">
+                <div class="tile-logo" aria-label="Sungkyunkwan University">
+                  <img class="project-logo-img" src="./assets/logos/SKKU.png" alt="Sungkyunkwan University logo" />
+                </div>
+              </button>
+              <div class="project-tile project-tile-placeholder" aria-hidden="true"></div>
+            </div>
+          </div>
+
+          <div class="project-modal" id="project-modal" hidden>
+            <div class="project-modal-backdrop" data-close-project-modal></div>
+            <article class="project-modal-panel" role="dialog" aria-modal="true" aria-labelledby="project-modal-title">
+              <button class="project-modal-close" type="button" aria-label="Close project detail" data-close-project-modal>
+                Close
+              </button>
+              <p class="section-label">Project Detail</p>
+              <h3 id="project-modal-title"></h3>
+              <p id="project-modal-line1"></p>
+              <p id="project-modal-line2"></p>
+            </article>
+          </div>
+        </section>
+
+        <section class="contact-band" aria-labelledby="contact-title">
+          <div class="contact-band-inner">
+            <p class="section-label">Get in touch</p>
+            <h2 id="contact-title">
+              Who's in charge?<br />
+              I study how people decide what to hand over to AI<br />
+              and what to take back.
+            </h2>
+            <p class="contact-email">
+              <a href="mailto:gnsals9262@gmail.com">gnsals9262@gmail.com</a>
+            </p>
+          </div>
+
+          <div class="contact-socials" aria-label="Contact links">
+            <a href="#" aria-label="Copy Gmail address" data-copy-email="gnsals9262@gmail.com">
+              <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M3.75 6.75h16.5a.75.75 0 0 1 .75.75v9a.75.75 0 0 1-.75.75H3.75A.75.75 0 0 1 3 16.5v-9a.75.75 0 0 1 .75-.75Z"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.7"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="m4.5 7.5 7.016 5.26a.8.8 0 0 0 .968 0L19.5 7.5"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.7"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/hunmin-do-5b7bb3338" aria-label="LinkedIn" target="_blank" rel="noreferrer">
+              <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M6.75 8.25a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM5.5 9.75h2.5v8.75H5.5zM10.5 9.75H13v1.25h.04c.35-.66 1.2-1.5 2.71-1.5 2.9 0 3.25 1.82 3.25 4.67v4.33h-2.5v-3.84c0-1.04-.02-2.38-1.45-2.38s-1.67 1.13-1.67 2.3v3.92H10.5Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </a>
+            <a href="https://scholar.google.com/citations?user=tsN6K5IAAAAJ&hl=ko" aria-label="Google Scholar" target="_blank" rel="noreferrer">
+              <img class="social-icon social-icon-image" src="./assets/logos/google-scholar--v2.jpg" alt="" />
+            </a>
+            <a href="mailto:gnsals9262@gmail.com" aria-label="Email">
+              <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M16.5 18.75c-1.58 0-2.84-.8-3.54-1.86a4.63 4.63 0 0 1-3.71 1.86A4.75 4.75 0 1 1 14 14v1a1.75 1.75 0 0 0 3.5 0V14a5.5 5.5 0 1 0-2.2 4.4"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.7"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <circle cx="9.25" cy="14" r="2.25" fill="none" stroke="currentColor" stroke-width="1.7" />
+              </svg>
+            </a>
+          </div>
+        </section>
       </main>
+      <nav class="section-progress" aria-label="Section progress"></nav>
     </div>
+    <div class="copy-toast" id="copy-toast" role="status" aria-live="polite" hidden>Copied!</div>
+    <script>
+      (() => {
+        const container = document.querySelector("main");
+        const sections = Array.from(container.querySelectorAll("[data-fullpage-section]"));
+        const progress = document.querySelector(".section-progress");
+        const detailLinks = Array.from(document.querySelectorAll(".detail-link"));
+        const projectTiles = Array.from(document.querySelectorAll(".project-tile[data-project]"));
+        const projectModal = document.getElementById("project-modal");
+        const projectModalTitle = document.getElementById("project-modal-title");
+        const projectModalLine1 = document.getElementById("project-modal-line1");
+        const projectModalLine2 = document.getElementById("project-modal-line2");
+        const modalCloseTriggers = Array.from(document.querySelectorAll("[data-close-project-modal]"));
+        const copyEmailLinks = Array.from(document.querySelectorAll("[data-copy-email]"));
+        const copyToast = document.getElementById("copy-toast");
+        let copyToastTimer;
+
+        if (!container || sections.length < 2) return;
+
+        let activeIndex = 0;
+
+        const savedScroll = sessionStorage.getItem("portfolioScrollTop");
+        if (savedScroll !== null) {
+          const top = Number(savedScroll);
+          if (!Number.isNaN(top)) {
+            requestAnimationFrame(() => {
+              container.scrollTop = top;
+              updateActiveIndex();
+            });
+          }
+          sessionStorage.removeItem("portfolioScrollTop");
+        }
+
+        const isCompactViewport = () => window.matchMedia("(max-width: 980px)").matches;
+
+        const dots = sections.map((section, index) => {
+          const button = document.createElement("button");
+          button.type = "button";
+          button.className = "section-progress-dot";
+          button.setAttribute("aria-label", `Go to section ${index + 1}`);
+          button.addEventListener("click", () => {
+            container.scrollTo({
+              top: section.offsetTop,
+              behavior: "smooth",
+            });
+          });
+          progress?.appendChild(button);
+          return button;
+        });
+
+        const syncProgress = () => {
+          dots.forEach((dot, index) => {
+            dot.classList.toggle("is-active", index === activeIndex);
+          });
+        };
+
+        const updateActiveIndex = () => {
+          const scrollTop = container.scrollTop;
+          let closestIndex = 0;
+          let closestDistance = Number.POSITIVE_INFINITY;
+
+          sections.forEach((section, index) => {
+            const distance = Math.abs(section.offsetTop - scrollTop);
+            if (distance < closestDistance) {
+              closestDistance = distance;
+              closestIndex = index;
+            }
+          });
+
+          activeIndex = closestIndex;
+          syncProgress();
+        };
+
+        container.addEventListener("scroll", () => {
+          updateActiveIndex();
+        });
+
+        window.addEventListener("resize", () => {
+          if (isCompactViewport()) {
+            progress?.setAttribute("hidden", "");
+          } else {
+            progress?.removeAttribute("hidden");
+          }
+          updateActiveIndex();
+        });
+
+        if (isCompactViewport()) {
+          progress?.setAttribute("hidden", "");
+        }
+
+        detailLinks.forEach((link) => {
+          link.addEventListener("click", () => {
+            sessionStorage.setItem("portfolioScrollTop", String(container.scrollTop));
+          });
+        });
+
+        const showCopyToast = () => {
+          if (!copyToast) return;
+          copyToast.hidden = false;
+          copyToast.classList.add("is-visible");
+
+          if (copyToastTimer) {
+            window.clearTimeout(copyToastTimer);
+          }
+
+          copyToastTimer = window.setTimeout(() => {
+            copyToast.classList.remove("is-visible");
+            copyToast.hidden = true;
+          }, 1400);
+        };
+
+        const copyText = async (text) => {
+          if (navigator.clipboard?.writeText) {
+            await navigator.clipboard.writeText(text);
+            return;
+          }
+
+          const tempInput = document.createElement("input");
+          tempInput.value = text;
+          document.body.appendChild(tempInput);
+          tempInput.select();
+          document.execCommand("copy");
+          tempInput.remove();
+        };
+
+        copyEmailLinks.forEach((link) => {
+          link.addEventListener("click", async (event) => {
+            event.preventDefault();
+            const email = link.getAttribute("data-copy-email");
+            if (!email) return;
+
+            try {
+              await copyText(email);
+              showCopyToast();
+            } catch (error) {
+              console.error("Failed to copy email", error);
+            }
+          });
+        });
+
+        const projectDetailMap = {
+          travel: {
+            title: "Formally Verified Agentic Workflow for Personalized Travel Planning",
+            line1:
+              "Developing an Agentic AI travel-planning workflow and reviewing benchmark datasets (TravelPlanner, TripCraft).",
+            line2:
+              "Surveying recent Agentic AI literature to define evaluation criteria and shape a unified workflow framework.",
+          },
+          kosme: {
+            title: "Job Matching Platform Feature Proposal (KOSME)",
+            line1:
+              "Led full UX process including user research, IA, prototyping, and usability testing.",
+            line2:
+              "Designed transparent recommendation logic and apply-tracking tools based on qualitative interviews and JTBD analysis.",
+          },
+          maeil: {
+            title: "Generative Engine Optimization (GEO), Maeil Business Newspaper",
+            line1:
+              "Leading a project to enhance article structure for increased citation and visibility in GenAI models (GPT-4o).",
+            line2:
+              "Analyzing AI citation behavior via prompt-based audits and LLM interaction logs.",
+          },
+          kto: {
+            title: "Special Purpose Tourism Analysis, Korea Tourism Organization (KTO)",
+            line1:
+              "Segmented tourist types (medical, influencer, etc.) using Social Network Analysis (SNA).",
+            line2:
+              "Analyzed roaming-based behavioral patterns to inform patient-specific design strategy.",
+          },
+          ballie: {
+            title: 'Industry-Academia Project - Home Appliance Robot "Ballie", Samsung Electronics',
+            line1:
+              "Developed AI home robot scenarios (observe-record-suggest) for solo-living MZ generation.",
+            line2:
+              "Created value-driven personas and service features including emotion check-ins and wellness reminders.",
+          },
+          smc: {
+            title: "UX Project - Inpatient Recovery Support Service, Samsung Medical Center",
+            line1:
+              "Designed a mobile app (Haeboa) for personalized micro-task rehabilitation and wishlist-based goal tracking.",
+            line2: "Developed IA, wireframes, and UI/UX prototypes for medical stakeholders.",
+          },
+          skku: {
+            title: "Panic Attack Diagnosis Using Wearable ECG Monitoring, SKKU",
+            line1:
+              "Formulated a custom fusion formula combining wearable ECG signals with self-reported panic scores (PDSS, APPQ).",
+            line2:
+              "Designed a mobile app UI/UX prototype to visualize personalized risk scores in real time.",
+          },
+        };
+
+        if (projectTiles.length && projectModal && projectModalTitle && projectModalLine1 && projectModalLine2) {
+          projectTiles.forEach((tile) => {
+            tile.addEventListener("click", () => {
+              const key = tile.getAttribute("data-project");
+              if (!key || !projectDetailMap[key]) return;
+
+              projectModalTitle.textContent = projectDetailMap[key].title;
+              projectModalLine1.textContent = projectDetailMap[key].line1;
+              projectModalLine2.textContent = projectDetailMap[key].line2;
+              projectModal.removeAttribute("hidden");
+              document.body.classList.add("modal-open");
+            });
+          });
+
+          modalCloseTriggers.forEach((trigger) => {
+            trigger.addEventListener("click", () => {
+              projectModal.setAttribute("hidden", "");
+              document.body.classList.remove("modal-open");
+            });
+          });
+
+          document.addEventListener("keydown", (event) => {
+            if (event.key !== "Escape") return;
+            if (projectModal.hasAttribute("hidden")) return;
+            projectModal.setAttribute("hidden", "");
+            document.body.classList.remove("modal-open");
+          });
+        }
+
+        updateActiveIndex();
+      })();
+    </script>
   </body>
 </html>

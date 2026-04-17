@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Publications | Hunmin Do</title>
+    <meta
+      name="description"
+      content="Publications and conference papers by Hunmin Do."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="detail-page">
+    <main class="detail-shell">
+      <a class="detail-back" href="./index.html" id="back-home-link">Back to home</a>
+
+      <section class="detail-panel detail-section">
+        <p class="section-label">International Journal</p>
+        <article class="talk-item">
+          <h3>Oh H., Do H., et al.</h3>
+          <p class="talk-body">
+            Panic Attack Prediction for Patients With Panic Disorder via Machine Learning and
+            Wearable ECG Monitoring.
+          </p>
+          <p class="talk-meta">
+            Journal of Medical Internet Research (JMIR), 2025. (Q1, IF 7.5) - DOI:
+            10.2196/69045
+          </p>
+        </article>
+      </section>
+
+      <section class="detail-panel detail-section">
+        <p class="section-label">Domestic Journals</p>
+
+        <article class="talk-item">
+          <h3>Do, H.-M., et al.</h3>
+          <p class="talk-body">Wearable ECG-Based Multimodal Panic Attack Prediction Model.</p>
+          <p class="talk-meta">
+            Journal of the Korea Institute of Information and Communication Engineering, 2025.
+          </p>
+        </article>
+
+        <article class="talk-item">
+          <h3>Do, H.-M., Lee, Y.-J.</h3>
+          <p class="talk-body">
+            The Impact of AI Agents' Use of Address/Reference Terms on Perceived Anthropomorphism
+            and User Experience.
+          </p>
+          <p class="talk-meta">Journal of Digital Contents Society, 2025.</p>
+        </article>
+      </section>
+
+      <section class="detail-panel detail-section">
+        <p class="section-label">International Conferences</p>
+        <article class="talk-item">
+          <h3>[Accepted | Workshop Paper] Do, H.-M., Taejun Yoon, Ki Yong Jung</h3>
+          <p class="talk-body">
+            MIND: Multi-Agent Inference for Negotiation Dialogue in Travel Planning.
+          </p>
+          <p class="talk-meta">
+            ICLR 2026 Workshop on From Human Cognition to AI Reasoning (HCAIR), 2026.
+          </p>
+        </article>
+      </section>
+    </main>
+    <script>
+      (() => {
+        const backLink = document.getElementById("back-home-link");
+        if (!backLink) return;
+
+        backLink.addEventListener("click", (event) => {
+          const hasSavedScroll = sessionStorage.getItem("portfolioScrollTop") !== null;
+          if (!hasSavedScroll) return;
+
+          event.preventDefault();
+          window.location.href = "./index.html";
+        });
+      })();
+    </script>
+  </body>
+</html>
